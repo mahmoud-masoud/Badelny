@@ -24,7 +24,7 @@ Users can continue chatting with other users they've connected with through the 
 
 ## Live Demo
 
-You can try out Badleny live at [https://Badleny-e43be.web.app/]
+You can try out Badleny live at [https://alemny-e43be.web.app/]
 
 This web app built using:
 
