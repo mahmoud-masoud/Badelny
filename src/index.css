@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./assets/fonts/Geist-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('./assets/fonts/Geist-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('./assets/fonts/Geist-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('./assets/fonts/Geist-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('./assets/fonts/Geist-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+:root {
+  --white: #fff;
+  --primary: #1ca0be;
+  --slate-200: #e2e8f0;
+  --slate-400: #94a3b8;
+}
