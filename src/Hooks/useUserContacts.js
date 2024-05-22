@@ -19,11 +19,9 @@ const useUserContacts = () => {
   const { user } = useUserContext();
 
   useEffect(() => {
-    if (!user) {
-      return;
-    }
+    if (!user) return;
 
-    const getUserContacts = () => {
+    try {
       const contactsRef = collection(db, 'messages');
 
       const q = query(
@@ -43,17 +41,11 @@ const useUserContacts = () => {
       });
 
       setLoading(false);
-      return unsubscribe;
-    };
-
-    try {
-      getUserContacts();
+      return () => unsubscribe;
     } catch (error) {
       setLoading(false);
       setError(error.code);
     }
-
-    return () => getUserContacts();
   }, [user, setContacts]);
 
   return {

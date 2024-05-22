@@ -9,7 +9,9 @@ const Message = ({ content, addedTime, senderId }) => {
     return user.uid === senderId;
   }, [user, senderId]);
 
-  const messageDate = formatTimeDifference(addedTime);
+  const messageDate = useMemo(() => {
+    return formatTimeDifference(addedTime);
+  }, [addedTime]);
 
   return (
     <div className={`flex gap-4 mb-4 ${isCurrentUserSender && 'justify-end'}`}>

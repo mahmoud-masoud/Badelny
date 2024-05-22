@@ -6,6 +6,7 @@ import useUserContacts from '../../Hooks/useUserContacts';
 
 const ChatWrapper = () => {
   const { selectedUser } = useChatStore();
+
   const { contacts } = useUserContacts();
 
   const isMobile = useScreenWidth();

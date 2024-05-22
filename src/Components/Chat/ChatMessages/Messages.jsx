@@ -2,12 +2,15 @@ import Message from './Message';
 import useContactMessages from '../../../Hooks/useContactMessages';
 import useScrollToBottom from '../../../Hooks/useScrollToBottom';
 import LoadingSkeleton from '../../UI/LoadingSkeleton';
+import { useChatStore } from '../../../store/chat';
 
 const Messages = () => {
-  const { loading, messages } = useContactMessages();
-  const ref = useScrollToBottom();
+  const { loading } = useContactMessages();
+  const { messages } = useChatStore();
+  const ref = useScrollToBottom(messages);
 
   if (loading) return <MessagesSkeleton />;
+
   return (
     <div ref={ref} className='h-full overflow-y-scroll flex-1'>
       <div className='text-white p-2 py-4 md:p-6 min-h-full'>

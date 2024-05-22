@@ -21,7 +21,7 @@ const useNewMessage = () => {
     setMessage(e.target.value);
   };
 
-  const addNewMessage = async (e) => {
+  const addNewMessage = (e) => {
     e.preventDefault();
 
     const checkUserContact = async () => {

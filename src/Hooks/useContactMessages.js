@@ -18,6 +18,7 @@ const useContactMessages = () => {
 
   const { user } = useUserContext();
   const { selectedUser, setMessages } = useChatStore();
+
   useEffect(() => {
     if (!user || !selectedUser) return;
 
