@@ -47,10 +47,10 @@ const useContactMessages = () => {
           setMessages(contactHistory);
           setContactMessages(contactHistory);
         });
-
         setLoading(false);
         return unsubscribe;
       }
+      setLoading(false);
     };
 
     try {

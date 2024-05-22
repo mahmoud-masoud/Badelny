@@ -5,7 +5,7 @@ const MessageInput = () => {
   const { message, getMessage, addNewMessage } = useNewMessage();
 
   return (
-    <form className=' w-full' onSubmit={addNewMessage}>
+    <form className='w-full' onSubmit={addNewMessage}>
       <div className='p-2 flex gap-4'>
         <input
           onChange={getMessage}

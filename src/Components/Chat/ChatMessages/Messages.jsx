@@ -28,7 +28,7 @@ export default Messages;
 
 const MessagesSkeleton = () => {
   return (
-    <div>
+    <div className='h-full'>
       <div className='flex items-end flex-col gap-4 px-2 py-4'>
         <LoadingSkeleton className={'h-10 w-28 rounded-lg'} />
         <LoadingSkeleton className={'h-10 w-1/3 rounded-lg'} />
