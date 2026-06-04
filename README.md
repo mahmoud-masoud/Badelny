@@ -2,6 +2,10 @@
 
 Welcome to Badleny, the web app where users can exchange skills with others in a new, interactive way. Here's a breakdown of our features and sections:
 
+## Screenshots
+
+![Home Page](./screenshots/home.png)
+
 ## Home Page
 
 The home page provides an overview of the website and its services, giving users an idea of what to expect.
