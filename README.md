@@ -4,7 +4,11 @@ Welcome to Badleny, the web app where users can exchange skills with others in a
 
 ## Screenshots
 
+![Thumbnail Page](./screenshots/thumbnail.png)
 ![Home Page](./screenshots/home.png)
+![Real time chat](./screenshots/chat.png)
+![Signup multi level form](./screenshots/signup.png)
+![Search](./screenshots/search.png)
 
 ## Home Page
 
