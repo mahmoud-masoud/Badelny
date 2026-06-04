@@ -2,8 +2,6 @@
 
 Welcome to Badleny, the web app where users can exchange skills with others in a new, interactive way. Here's a breakdown of our features and sections:
 
-## Screenshots
-
 ## Thumbnail Page
 
 ![Thumbnail Page](./screenshots/thumbnail.png)
